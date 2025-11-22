@@ -2,20 +2,235 @@
 <html lang="lt">
 <head>
     <meta charset="UTF-8">
-    <title>Mano Puslapis</title>
+    <title>Mano Portfolio</title>
     <style>
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            max-width: 700px;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        section {
+            max-width: 900px;
             margin: 40px auto;
             padding: 20px;
-            line-height: 1.6;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        h1 { color: #333; }
+
+        h2 { margin-top: 0; }
+
+        .skills span, .social a {
+            display: inline-block;
+            padding: 8px 12px;
+            margin: 5px;
+            background: #e5e5e5;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .projects div {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #fafafa;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
-    <h1>Sveiki, čia mano svetainė!</h1>
-    <p>Šį puslapį sukūriau naudodamas GitHub Pages.</p>
+
+<!-- =================================================
+   HEADER
+================================================= -->
+<header>
+
+    <!-- 🖼️ PAKEISK Į SAVO NUOTRAUKĄ -->
+    <img src="YOUR_PHOTO_URL_HERE" alt="Mano nuotrauka">
+
+    <!-- 🔤 ĮRAŠYK SAVO VARDĄ -->
+    <h1>TAVO VARDAS</h1>
+
+    <p>4th-year Informatics student</p>
+</header>
+
+<!-- =================================================
+   ABOUT ME
+================================================= -->
+<section>
+    <h2>About Me</h2>
+
+    <p>
+        I am a 4th-year Informatics student with interests in technology, creativity, 
+        education, and international experience. I am passionate about learning, 
+        problem-solving, and exploring the world through cultural exchange, sports, 
+        arts, and travel.
+    </p>
+
+    <h3>Hobbies & Interests</h3>
+    <p>
+        Beach volleyball, surfing, tennis, yoga, reading, traveling, videography, 
+        theater, podcasts, music, movies.
+    </p>
+</section>
+
+<!-- =================================================
+   SOCIAL LINKS
+================================================= -->
+<section>
+    <h2>Social Links</h2>
+
+    <div class="social">
+        <a href="https://github.com/YOUR_GITHUB" target="_blank">GitHub</a>
+        <a href="https://instagram.com/YOUR_INSTAGRAM" target="_blank">Instagram</a>
+        <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">LinkedIn</a>
+    </div>
+</section>
+
+<!-- =================================================
+   SKILLS
+================================================= -->
+<section>
+    <h2>Skills</h2>
+
+    <div class="skills">
+        <span>Time Management (Expert)</span>
+        <span>Communication (Expert)</span>
+        <span>Punctuality (Expert)</span>
+        <span>Creativity (Expert)</span>
+        <span>Teamwork (Expert)</span>
+
+        <span>Microsoft Office (Good)</span>
+        <span>Visual Studio Code (Good)</span>
+        <span>Code::Blocks (Good)</span>
+        <span>C++ (2 years)</span>
+    </div>
+</section>
+
+<!-- =================================================
+   EXPERIENCE
+================================================= -->
+<section>
+    <h2>Experience & Projects</h2>
+
+    <div class="projects">
+
+        <div>
+            <h3>Rocket Software</h3>
+            <p><strong>11/2024 – 03/2025</strong></p>
+            <p>NextGen Academy – Mainframe technology program participant.</p>
+        </div>
+
+        <div>
+            <h3>Work & Travel – Gold Lake Cabins</h3>
+            <p><strong>06/2024 – 08/2024</strong></p>
+            <p>Blairsden, California, United States • Hospitality Crew.</p>
+        </div>
+
+        <div>
+            <h3>IT Teacher</h3>
+            <p><strong>09/2023 – 05/2024</strong></p>
+            <p>Mokslo Šviesa – Vilnius, Lithuania.</p>
+        </div>
+
+        <div>
+            <h3>Erasmus+ Project</h3>
+            <p><strong>11/2023 – 11/2023</strong></p>
+            <p>
+                Topic: “Play it until you make it” – Kobuleti, Georgia.  
+                Participated in international educational activities.
+            </p>
+        </div>
+
+        <div>
+            <h3>NKKM Computer School</h3>
+            <p><strong>09/2020 – 05/2021</strong></p>
+            <p>Completed 2 years of C++ programming courses.</p>
+        </div>
+
+        <div>
+            <h3>Volunteering – Maisto Bankas</h3>
+            <p><strong>05/2019 – 05/2019</strong></p>
+            <p>Sorting food products and assisting distribution for people in need.</p>
+        </div>
+    </div>
+</section>
+
+<!-- =================================================
+   EDUCATION
+================================================= -->
+<section>
+    <h2>Education</h2>
+
+    <div class="projects">
+
+        <div>
+            <h3>Vilnius University</h3>
+            <p><strong>09/2022 – 06/2026</strong></p>
+            <p>Informatics – 4th year student.</p>
+        </div>
+
+        <div>
+            <h3>Vilniaus Žirmūnai Gymnasium</h3>
+            <p><strong>09/2018 – 06/2022</strong></p>
+            <p>Mathematics Class.</p>
+        </div>
+
+        <div>
+            <h3>VGTU Engineering Lyceum</h3>
+            <p><strong>09/2015 – 06/2018</strong></p>
+            <p>Folk Dance Class.</p>
+        </div>
+    </div>
+</section>
+
+<!-- =================================================
+   CONTACT FORM
+================================================= -->
+<section>
+    <h2>Contact</h2>
+
+    <p>Feel free to send me a message:</p>
+
+    <form action="#" method="post">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Message" rows="5" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
 </body>
 </html>
