@@ -50,7 +50,7 @@ h3 {
 }
 
 /* ===========================
-   SIDEBAR (TAVO DIZAINO VERSIJA)
+   SIDEBAR
 =========================== */
 
 .sidebar {
@@ -97,23 +97,18 @@ h3 {
 }
 
 /* ===========================
-   HOME SECTION
+   HOME SECTION IMAGE (pfp)
 =========================== */
 
-.pfp {
 .pfp {
   width: 220px;
   height: 220px;
   border-radius: 4px;
-  object-fit: cover;
-  object-position: top; 
-}
-
+  object-fit: contain;     /* <- pataisyta kad nesikirstų galva */
+  object-position: top;    /* <- fokusas į viršų */
   display: block;
   margin-bottom: 30px;
   border: 1px solid #e8e8e8;
-}
-
 }
 
 .subtitle {
