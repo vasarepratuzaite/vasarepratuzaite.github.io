@@ -7,7 +7,6 @@
    GLOBAL
 =========================== */
 html {
-  --scroll-behavior: smooth;
   scroll-behavior: smooth;
 }
 
@@ -27,15 +26,13 @@ body {
 h1, h2, h3, h4 {
   font-family: 'Cormorant', serif;
   font-weight: 500;
-  color: #000000;
+  color: #000;
   text-transform: none;
   letter-spacing: 0.5px;
   margin: 0 0 25px 0;
 }
 
-h1 {
-  font-size: 3.2rem;
-}
+h1 { font-size: 3.2rem; }
 
 h2 {
   font-size: 2.4rem;
@@ -58,33 +55,47 @@ h3 {
   left: 0;
   top: 0;
   width: 17rem;
-  background: #ffffff;
-  color: #000;
+  background: #2E6F76; /* tavo teal spalva */
+  color: #fff;
   height: 100vh;
   padding: 40px 20px;
-  border-right: 1px solid #e7e7e7;
-  text-align: left;
-}
-
-.sidebar h2 {
-  margin-bottom: 32px;
-  font-family: 'Cormorant', serif;
-  font-size: 2rem;
-  font-weight: 500;
+  text-align: center;
 }
 
 .sidebar nav a {
   display: block;
-  color: #444;
-  padding: 10px 0;
+  color: #fff;
+  padding: 12px 0;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 500;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 
 .sidebar nav a:hover {
-  color: #000;
+  opacity: 0.7;
+}
+
+/* ===========================
+   SIDEBAR – AVATAR (MAŽAS BURBULAS)
+=========================== */
+
+.avatar-image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 0 auto 25px auto;
+  object-fit: cover;
+  
+  /* 👇 ČIA REGULIUOJI AR GALVA PAKELTA AR NULEISTA */
+  object-position: center 25%;
+  /* pvz:
+     center 0%  = rodo daugiau viršaus
+     center 50% = vidurys
+     center 70% = žemiau, daugiau kaklo
+  */
+
+  border: 4px solid rgba(255,255,255,0.4);
 }
 
 /* ===========================
@@ -93,20 +104,24 @@ h3 {
 
 .main {
   margin-left: 17rem;
-  padding: 70px 70px;
+  padding: 70px;
 }
 
 /* ===========================
-   HOME SECTION IMAGE (pfp)
+   HOME SECTION – DIDELĖ PHOTO
 =========================== */
 
 .pfp {
-  width: 220px;
-  height: 220px;
-  border-radius: 4px;
-  object-fit: contain;     /* <- pataisyta kad nesikirstų galva */
-  object-position: center 40%;
-   /* <- fokusas į viršų */
+  width: 260px;
+  height: 260px;
+  border-radius: 6px;
+
+  object-fit: contain; /* kad neapkarpytų */
+  
+  /* 👇 ŠITA VIETA KELIA / LEIDŽIA GALVĄ */
+  object-position: center 10%;
+  /* kelti = mažinti %, leisti žemyn = didinti % */
+
   display: block;
   margin-bottom: 30px;
   border: 1px solid #e8e8e8;
@@ -130,7 +145,7 @@ h3 {
 }
 
 /* ===========================
-   TAGS (SKILLS)
+   SKILLS TAGS
 =========================== */
 
 .tags span {
@@ -152,15 +167,15 @@ h3 {
 }
 
 /* ===========================
-   EXPERIENCE / EDUCATION CARDS
+   CARDS
 =========================== */
 
 .card {
-  background: #ffffff;
+  background: #fff;
   padding: 25px 20px;
   margin-bottom: 25px;
-  border-radius: 3px;
-  border: 1px solid #eeeeee;
+  border-radius: 6px;
+  border: 1px solid #ddd;
   transition: 0.25s;
 }
 
@@ -197,9 +212,7 @@ form button {
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
   font-weight: 500;
-  letter-spacing: 0.3px;
 }
 
 form button:hover {
@@ -224,7 +237,5 @@ form button:hover {
     padding: 40px 20px;
   }
 
-  h1 {
-    font-size: 2.4rem;
-  }
+  h1 { font-size: 2.4rem; }
 }
