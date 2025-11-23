@@ -1,102 +1,228 @@
-body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: #0f0f0f;
-    color: #ddd;
+/* ===========================
+   FONTS
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap');
+
+/* ===========================
+   GLOBAL
+=========================== */
+html {
+  --scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  color: #111111;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* ===========================
+   TYPOGRAPHY
+=========================== */
+
+h1, h2, h3, h4 {
+  font-family: 'Cormorant', serif;
+  font-weight: 500;
+  color: #000000;
+  text-transform: none;
+  letter-spacing: 0.5px;
+  margin: 0 0 25px 0;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 14px;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+/* ===========================
+   SIDEBAR (TAVO DIZAINO VERSIJA)
+=========================== */
+
 .sidebar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 230px;
-    height: 100vh;
-    background: #141414;
-    border-right: 1px solid #333;
-    padding: 30px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 17rem;
+  background: #ffffff;
+  color: #000;
+  height: 100vh;
+  padding: 40px 20px;
+  border-right: 1px solid #e7e7e7;
+  text-align: left;
 }
 
 .sidebar h2 {
-    margin-top: 0;
-    color: #fff;
+  margin-bottom: 32px;
+  font-family: 'Cormorant', serif;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .sidebar nav a {
-    display: block;
-    color: #bbb;
-    padding: 10px 0;
-    text-decoration: none;
-    font-size: 16px;
+  display: block;
+  color: #444;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 .sidebar nav a:hover {
-    color: #fff;
+  color: #000;
 }
+
+/* ===========================
+   MAIN CONTENT
+=========================== */
 
 .main {
-    margin-left: 260px;
-    padding: 40px;
+  margin-left: 17rem;
+  padding: 70px 70px;
 }
 
-.section {
-    margin-bottom: 80px;
-}
-
-.home {
-    text-align: center;
-}
+/* ===========================
+   HOME SECTION
+=========================== */
 
 .pfp {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 3px solid #444;
+  width: 220px;
+  height: 220px;
+  border-radius: 4px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 30px;
+  border: 1px solid #e8e8e8;
 }
 
 .subtitle {
-    color: #888;
+  font-size: 0.9rem;
+  color: #444;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: -15px;
 }
+
+/* ===========================
+   SECTIONS
+=========================== */
+
+.section {
+  margin-bottom: 100px;
+  padding-bottom: 40px;
+}
+
+/* ===========================
+   TAGS (SKILLS)
+=========================== */
 
 .tags span {
-    display: inline-block;
-    background: #1e1e1e;
-    padding: 8px 12px;
-    border-radius: 5px;
-    margin: 5px;
-    border: 1px solid #333;
+  background: #f5f5f5;
+  border-radius: 3px;
+  color: #444;
+  display: inline-block;
+  padding: 6px 14px;
+  margin: 0 10px 10px 0;
+  font-size: 0.85rem;
+  border: 1px solid #eee;
+  transition: 0.2s;
 }
 
+.tags span:hover {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+/* ===========================
+   EXPERIENCE / EDUCATION CARDS
+=========================== */
+
 .card {
-    background: #1a1a1a;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #2a2a2a;
+  background: #ffffff;
+  padding: 25px 20px;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  border: 1px solid #eeeeee;
+  transition: 0.25s;
+}
+
+.card:hover {
+  border-color: #000;
 }
 
 .date {
-    color: #999;
-    font-size: 14px;
-    margin: 5px 0;
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 8px;
 }
+
+/* ===========================
+   CONTACT FORM
+=========================== */
 
 form input,
 form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
+  color: #111;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+}
+
+form button {
+  padding: 12px 24px;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+form button:hover {
+  background: #222;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 992px) {
+  .sidebar {
+    position: relative;
     width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    background: #1a1a1a;
-    border: 1px solid #333;
-    color: #fff;
-}
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+  }
 
-button {
-    padding: 12px 20px;
-    background: #fff;
-    border: none;
-    cursor: pointer;
-    color: #000;
-}
+  .main {
+    margin-left: 0;
+    padding: 40px 20px;
+  }
 
+  h1 {
+    font-size: 2.4rem;
+  }
+}
