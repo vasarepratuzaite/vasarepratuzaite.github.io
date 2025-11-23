@@ -79,23 +79,15 @@ h3 {
 /* ===========================
    SIDEBAR – AVATAR (MAŽAS BURBULAS)
 =========================== */
-
 .avatar-image {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  margin: 0 auto 25px auto;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
-  
-  /* 👇 ČIA REGULIUOJI AR GALVA PAKELTA AR NULEISTA */
-  object-position: center 25%;
-  /* pvz:
-     center 0%  = rodo daugiau viršaus
-     center 50% = vidurys
-     center 70% = žemiau, daugiau kaklo
-  */
-
-  border: 4px solid rgba(255,255,255,0.4);
+  object-position: center;
+  border-radius: 10px; /* kvadratiniai kampai, bet ne per aštrūs */
+  margin: 0 auto 25px auto;
+  display: block;
+  border: 3px solid rgba(255, 255, 255, 0.4);
 }
 
 /* ===========================
