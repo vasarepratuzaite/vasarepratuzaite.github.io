@@ -105,7 +105,7 @@ h3 {
   height: 220px;
   border-radius: 4px;
   object-fit: contain;     /* <- pataisyta kad nesikirstų galva */
-  object-position: center 20%;
+  object-position: center 40%;
    /* <- fokusas į viršų */
   display: block;
   margin-bottom: 30px;
