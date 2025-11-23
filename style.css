@@ -119,7 +119,8 @@ h3 {
   object-fit: contain; /* kad neapkarpytų */
   
   /* 👇 ŠITA VIETA KELIA / LEIDŽIA GALVĄ */
-  object-position: center 10%;
+  object-position: center 25%;
+
   /* kelti = mažinti %, leisti žemyn = didinti % */
 
   display: block;
