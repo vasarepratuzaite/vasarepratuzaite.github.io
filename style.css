@@ -235,35 +235,52 @@ form button:hover {
   h1 { font-size: 2.4rem; }
 }
 /* ===========================
-   TECHNICAL SKILLS (UL/LIST)
+   TECHNICAL SKILLS — TITLE
 =========================== */
 
-.skills-heading {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 30px 0 10px 0;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  color: #333;
+#technical-skills h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
 }
 
-ul.tech-list {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 10px;
+/* ===========================
+   CATEGORY HEADERS
+=========================== */
+
+.tech-category {
+    font-family: 'Cormorant', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #4b4f52;
+    margin-top: 35px;
+    margin-bottom: 12px;
 }
 
-ul.tech-list li {
-  display: flex;
-  align-items: center;
-  font-size: 0.95rem;
-  margin-bottom: 8px;
-  color: #333;
+/* ===========================
+   SKILL ITEMS (LIKE IMAGE)
+=========================== */
+
+.tech-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 28px;
 }
 
-ul.tech-list li i {
-  font-size: 1rem;
-  margin-right: 8px;
-  color: #2E6F76; /* tavo teal */
+.tech-items span {
+    font-size: 0.95rem;
+    color: #51565a;
+    position: relative;
+    padding-left: 14px;
 }
 
+/* small arrow bullet like screenshot */
+.tech-items span::before {
+    content: "➤";
+    position: absolute;
+    left: 0;
+    top: 1px;
+    font-size: 0.7rem;
+    color: #7d8386;
+}
