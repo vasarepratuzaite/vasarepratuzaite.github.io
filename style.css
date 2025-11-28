@@ -27,7 +27,6 @@ h1, h2, h3, h4 {
   font-family: 'Cormorant', serif;
   font-weight: 500;
   color: #000;
-  text-transform: none;
   letter-spacing: 0.5px;
   margin: 0 0 25px 0;
 }
@@ -55,7 +54,7 @@ h3 {
   left: 0;
   top: 0;
   width: 17rem;
-  background: #2E6F76; /* tavo teal spalva */
+  background: #2E6F76;
   color: #fff;
   height: 100vh;
   padding: 40px 20px;
@@ -77,7 +76,7 @@ h3 {
 }
 
 /* ===========================
-   SIDEBAR – AVATAR (TEISINGA VERSIJA)
+   SIDEBAR AVATAR
 =========================== */
 
 .avatar-container {
@@ -96,7 +95,6 @@ h3 {
   object-position: center 20%;
 }
 
-
 /* ===========================
    MAIN CONTENT
 =========================== */
@@ -107,17 +105,15 @@ h3 {
 }
 
 /* ===========================
-   HOME SECTION – DIDELĖ PHOTO
+   HOME SECTION – BIG PHOTO
 =========================== */
 
 .pfp {
   width: 260px;
   height: 260px;
   border-radius: 6px;
-
-  object-fit: contain; /* full photo */
+  object-fit: contain;
   object-position: center 40%;
-
   display: block;
   margin-bottom: 30px;
   border: 1px solid #e8e8e8;
@@ -141,7 +137,7 @@ h3 {
 }
 
 /* ===========================
-   SKILLS TAGS
+   TAGS (if needed)
 =========================== */
 
 .tags span {
@@ -185,31 +181,89 @@ h3 {
   margin-bottom: 8px;
 }
 
+/* ===========================
+   CONTACT ICONS (FINAL VERSION)
+=========================== */
+
 .contact-icons {
     display: flex;
+    justify-content: flex-start;
     gap: 25px;
     margin-top: 30px;
 }
 
 .icon-bubble {
-    width: 75px;
-    height: 75px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
-    background: #51575c; /* labai panaši į tavo screenshot spalvą */
+    background: #2E6F76;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 32px;
+    font-size: 38px;
     text-decoration: none;
-    transition: 0.3s ease;
+    transition: 0.35s ease;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
 .icon-bubble:hover {
-    transform: scale(1.08);
-    background: #2E6F76; /* tavo žalsvas atspalvis */
+    transform: translateY(-6px) scale(1.08);
+    background: #244f54;
 }
 
+/* ===========================
+   SOFT SKILLS – GRID
+=========================== */
+
+#soft-skills {
+    margin-top: 80px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.skill-card {
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    background: #ffffff;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.skill-card:hover {
+    border-color: #2E6F76;
+    transform: translateY(-4px);
+}
+
+.skill-card h4 {
+    font-family: 'Cormorant', serif;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.level {
+    font-size: 0.9rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.level-expert {
+    background: #2E6F76;
+    color: #fff;
+}
+
+.level-good {
+    background: #e9e9e9;
+    color: #444;
+}
 
 /* ===========================
    RESPONSIVE
@@ -230,61 +284,3 @@ h3 {
 
   h1 { font-size: 2.4rem; }
 }
-/* ===========================
-   TECHNICAL SKILLS — HEADER
-=========================== */
-
-#technical-skills {
-    margin-top: 80px;
-}
-
-#technical-skills h2 {
-    font-size: 2.6rem;
-    margin-bottom: 40px;
-    font-family: 'Cormorant', serif;
-    font-weight: 600;
-}
-
-/* ===========================
-   CATEGORY TITLES
-=========================== */
-
-.tech-category {
-    font-family: 'Cormorant', serif;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #555;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-/* ===========================
-   SKILLS LINE STYLE
-=========================== */
-
-.tech-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px 28px; /* vertical + horizontal spacing */
-    margin-bottom: 10px;
-}
-
-.tech-items span {
-    font-size: 1rem;
-    color: #555;
-    position: relative;
-    padding-left: 14px;
-}
-
-/* arrow bullet identical to screenshot */
-.tech-items span::before {
-    content: "➤";
-    position: absolute;
-    left: 0;
-    top: 2px;
-    font-size: 0.7rem;
-    color: #999;
-}
-
