@@ -10,329 +10,167 @@
 
     <!-- Font Awesome ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-l="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    <style>
-        /* =========================================
-           COLORS & BASE SETTINGS
-        ========================================= */
-        :root {
-            --sidebar-bg: #337580; /* Your chosen color */
-            --text-dark: #111;
-            --text-light: #ffffff;
-            --accent: #000;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            font-family: "Inter", sans-serif;
-            color: var(--text-dark);
-            background: #ffffff;
-        }
-
-        h1, h2, h3 {
-            font-family: "Cormorant", serif;
-            margin: 0 0 20px 0;
-            color: var(--accent);
-        }
-
-        h1 { font-size: 3rem; }
-        h2 { font-size: 2.2rem; text-transform: uppercase; }
-        h3 { font-size: 1.4rem; }
-
-        /* =========================================
-           SIDEBAR
-        ========================================= */
-        .sidebar {
-            width: 280px;
-            background: var(--sidebar-bg);
-            color: var(--text-light);
-            height: 100vh;
-            position: fixed;
-            left: 0;
-            top: 0;
-            padding: 40px 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .avatar-container {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 4px solid rgba(255,255,255,0.7);
-            margin-bottom: 35px;
-        }
-
-        .avatar-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .menu {
-            list-style: none;
-            padding: 0;
-            margin-top: 20px;
-            width: 100%;
-        }
-
-        .menu li {
-            margin: 18px 0;
-        }
-
-        .menu a {
-            color: var(--text-light);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.95rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            display: block;
-        }
-
-        .menu a:hover {
-            opacity: 0.85;
-        }
-
-        /* =========================================
-           MAIN CONTENT
-        ========================================= */
-        .main {
-            margin-left: 280px;
-            padding: 60px 80px;
-            max-width: 900px;
-        }
-
-        section {
-            margin-bottom: 90px;
-        }
-
-        .subheading {
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-            color: #555;
-            margin-top: -10px;
-            margin-bottom: 20px;
-        }
-
-        /* Skill tags */
-        .tags span {
-            display: inline-block;
-            padding: 6px 12px;
-            background: #f2f2f2;
-            border: 1px solid #e3e3e3;
-            border-radius: 4px;
-            margin: 6px;
-            font-size: 0.85rem;
-        }
-
-        /* Cards for Experience & Education */
-        .card {
-            background: #ffffff;
-            padding: 20px;
-            border: 1px solid #e5e5e5;
-            border-radius: 6px;
-            margin-bottom: 25px;
-        }
-
-        .date {
-            font-size: 0.85rem;
-            color: #666;
-            margin-bottom: 5px;
-        }
-
-        /* Contact form */
-        input, textarea {
-            width: 100%;
-            padding: 12px;
-            margin: 10px 0 20px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-family: inherit;
-        }
-
-        button {
-            padding: 10px 22px;
-            background: #000;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-family: inherit;
-        }
-
-        button:hover { background: #222; }
-
-    </style>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
 <!-- ============================ SIDEBAR ============================ -->
 <div class="sidebar">
 
-    <!-- AVATAR (STAČIAKAMPIS) -->
     <div class="avatar-container">
         <img src="IMG_0948.JPG" alt="Profile photo">
     </div>
 
-    <ul class="menu">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#skills">SKILLS</a></li>
-        <li><a href="#experience">EXPERIENCE</a></li>
-        <li><a href="#education">EDUCATION</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-    </ul>
+    <nav>
+        <a href="#about">ABOUT</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#experience">EXPERIENCE</a>
+        <a href="#education">EDUCATION</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
 
 </div>
 
 
-    <div class="main">
+<!-- ============================ MAIN CONTENT ============================ -->
+<div class="main">
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I am Vasarė Pratuzaitė, a final-year Informatics student at Vilnius University, combining analytical thinking,
-                programming fundamentals, and growing interest in software engineering. Through hands-on experience at Rocket Software,
-                I gained exposure to enterprise systems, mainframe technologies, and structured, large-scale computing environments.
-                I value clean design, problem-solving, and building meaningful, practical solutions.
-            </p>
-        </section>
+    <!-- ================= ABOUT ================= -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am Vasarė Pratuzaitė, a final-year Informatics student at Vilnius University, combining analytical thinking,
+            programming fundamentals, and a growing interest in software engineering. Through hands-on experience at Rocket Software,
+            I gained exposure to enterprise systems, mainframe technologies, and structured, large-scale computing environments.
+            I value clean design, problem-solving, and building meaningful, practical solutions.
+        </p>
+    </section>
 
-<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-  <div class="my-auto" id="skills-content">
-    <h2 class="mb-5">Technical Skills</h2>
+    <!-- ================= TECHNICAL SKILLS ================= -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
 
-    <!-- PROGRAMMING LANGUAGES -->
-    <div class="subheading mb-3 skills-heading">Programming Languages (University)</div>
-    <ul class="list-inline">
-      <li class="list-inline-item"><i class="devicons devicons-java"></i> Java (OOP)</li>
-      <li class="list-inline-item"><i class="devicons devicons-python"></i> Python</li>
-      <li class="list-inline-item"><i class="devicons devicons-terminal_badge"></i> C++ (OOP)</li>
-      <li class="list-inline-item"><i class="devicons devicons-terminal_badge"></i> C (Procedural)</li>
-      <li class="list-inline-item"><i class="devicons devicons-javascript"></i> JavaScript</li>
-      <li class="list-inline-item"><i class="devicons devicons-terminal_badge"></i> Prolog</li>
-      <li class="list-inline-item"><i class="devicons devicons-terminal_badge"></i> Haskell</li>
-      <li class="list-inline-item"><i class="devicons devicons-html5"></i> HTML</li>
-      <li class="list-inline-item"><i class="devicons devicons-css3"></i> CSS</li>
-      <li class="list-inline-item"><i class="devicons devicons-terminal_badge"></i> Assembler</li>
-    </ul>
+        <h3>Programming Languages</h3>
+        <ul>
+            <li>Java (OOP)</li>
+            <li>Python</li>
+            <li>C++ (OOP)</li>
+            <li>C (Procedural)</li>
+            <li>JavaScript</li>
+            <li>Prolog</li>
+            <li>Haskell</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Assembler</li>
+        </ul>
 
-    <!-- OPERATING SYSTEMS -->
-    <div class="subheading mb-3 skills-heading">Operating Systems</div>
-    <ul class="list-inline">
-      <li class="list-inline-item"><i class="devicons devicons-apple"></i> iOS</li>
-      <li class="list-inline-item"><i class="devicons devicons-windows"></i> Windows</li>
-      <li class="list-inline-item"><i class="devicons devicons-terminal_badge"></i> Mainframe (z/OS basics)</li>
-    </ul>
+        <h3>Operating Systems</h3>
+        <ul>
+            <li>iOS</li>
+            <li>Windows</li>
+            <li>Mainframe (z/OS basics)</li>
+        </ul>
 
-    <!-- TOOLS & FRAMEWORKS -->
-    <div class="subheading mb-3 skills-heading">Tools & Frameworks</div>
-    <ul class="list-inline">
-      <li class="list-inline-item"><i class="devicons devicons-git"></i> Git</li>
-      <li class="list-inline-item"><i class="devicons devicons-visualstudio"></i> VS Code</li>
-      <li class="list-inline-item"><i class="devicons devicons-intellij"></i> IntelliJ</li>
-      <li class="list-inline-item"><i class="devicons devicons-terminal_badge"></i> Eclipse</li>
-    </ul>
+        <h3>Tools & IDEs</h3>
+        <ul>
+            <li>Git</li>
+            <li>VS Code</li>
+            <li>IntelliJ IDEA</li>
+            <li>Eclipse</li>
+        </ul>
 
-    <!-- DATA MANAGEMENT -->
-    <div class="subheading mb-3 skills-heading">Data Management</div>
-    <ul class="list-inline">
-      <li class="list-inline-item"><i class="devicons devicons-database"></i> SQL</li>
-      <li class="list-inline-item"><i class="devicons devicons-mongodb"></i> MongoDB</li>
-      <li class="list-inline-item"><i class="devicons devicons-terminal_badge"></i> Redis</li>
-      <li class="list-inline-item"><i class="devicons devicons-terminal_badge"></i> Cassandra</li>
-      <li class="list-inline-item"><i class="devicons devicons-terminal_badge"></i> Neo4j</li>
-    </ul>
+        <h3>Data Management</h3>
+        <ul>
+            <li>SQL</li>
+            <li>MongoDB</li>
+            <li>Redis</li>
+            <li>Cassandra</li>
+            <li>Neo4j</li>
+        </ul>
 
-    <!-- CONTAINERS -->
-    <div class="subheading mb-3 skills-heading">Containers</div>
-    <ul class="list-inline">
-      <li class="list-inline-item"><i class="devicons devicons-docker"></i> Docker</li>
-    </ul>
+        <h3>Containers</h3>
+        <ul>
+            <li>Docker</li>
+        </ul>
+    </section>
 
-  </div>
-</section>
+    <!-- ================= EXPERIENCE ================= -->
+    <section id="experience">
+        <h2>Experience</h2>
 
-</section>
-<section id="experience">
-    <h2>Experience</h2>
+        <div class="card">
+            <h3>Rocket Software</h3>
+            <p class="date">11/2024 – 03/2025</p>
+            <p>NextGen Academy – Mainframe technology.</p>
+        </div>
 
-    <div class="card">
-        <h3>Rocket Software</h3>
-        <p class="date">11/2024 – 03/2025</p>
-        <p>NextGen Academy – Mainframe technology.</p>
-    </div>
+        <div class="card">
+            <h3>Work & Travel — Gold Lake Cabins</h3>
+            <p class="date">06/2024 – 08/2024</p>
+            <p>Hospitality Crew, Blairsden, California, USA.</p>
+        </div>
 
-    <div class="card">
-        <h3>Work & Travel — Gold Lake Cabins</h3>
-        <p class="date">06/2024 – 08/2024</p>
-        <p>Hospitality Crew, Blairsden, California, USA.</p>
-    </div>
+        <div class="card">
+            <h3>IT Teacher — Mokslo Šviesa</h3>
+            <p class="date">09/2023 – 05/2024</p>
+            <p>Extracurricular IT activities for primary school students.</p>
+        </div>
 
-    <div class="card">
-        <h3>IT Teacher — Mokslo Šviesa</h3>
-        <p class="date">09/2023 – 05/2024</p>
-        <p>Extracurricular IT activities for primary school students.</p>
-    </div>
+        <div class="card">
+            <h3>Erasmus+ Project</h3>
+            <p class="date">11/2023 – 11/2023</p>
+            <p>Topic: <i>Play it until you make it</i> — Kobuleti, Sakartvelo.</p>
+        </div>
 
-    <div class="card">
-        <h3>Erasmus+ Project</h3>
-        <p class="date">11/2023 – 11/2023</p>
-        <p>Topic: <i>Play it until you make it</i> — Kobuleti, Sakartvelo.</p>
-    </div>
+        <div class="card">
+            <h3>NKKM Computer School</h3>
+            <p class="date">09/2020 – 05/2021</p>
+            <p>Completed 2 years of C++ programming courses.</p>
+        </div>
 
-    <div class="card">
-        <h3>NKKM Computer School</h3>
-        <p class="date">09/2020 – 05/2021</p>
-        <p>Completed 2 years of C++ programming courses.</p>
-    </div>
+        <div class="card">
+            <h3>Maisto Bankas</h3>
+            <p class="date">05/2019 – 05/2019</p>
+            <p>Volunteering — sorting food products.</p>
+        </div>
+    </section>
 
-    <div class="card">
-        <h3>Maisto Bankas</h3>
-        <p class="date">05/2019 – 05/2019</p>
-        <p>Volunteering — sorting food products.</p>
-    </div>
+    <!-- ================= EDUCATION ================= -->
+    <section id="education">
+        <h2>Education</h2>
 
-</section>
+        <div class="card">
+            <h3>Vilnius University</h3>
+            <p class="date">09/2022 – 06/2026</p>
+            <p>Informatics – 4th year student.</p>
+        </div>
 
+        <div class="card">
+            <h3>Vilniaus Žirmūnai Gymnasium</h3>
+            <p class="date">09/2018 – 06/2022</p>
+            <p>Mathematics class.</p>
+        </div>
+    </section>
 
-        <section id="education">
-            <h2>Education</h2>
+    <!-- ================= CONTACT ================= -->
+    <section id="contact">
+        <h2>Contact</h2>
 
-            <div class="card">
-                <h3>Vilnius University</h3>
-                <p class="date">09/2022 – 06/2026</p>
-                <p>Informatics – 4th year student.</p>
-            </div>
+        <div class="contact-icons">
+            <a href="https://www.linkedin.com/in/vasarė-pratuzaitė-4676a1224/" target="_blank" class="icon-bubble">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
 
-            <div class="card">
-                <h3>Vilniaus Žirmūnai Gymnasium</h3>
-                <p class="date">09/2018 – 06/2022</p>
-                <p>Mathematics class.</p>
-            </div>
+            <a href="https://github.com/vasarepratuzaite" target="_blank" class="icon-bubble">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </section>
 
-        </section>
-<section id="contact">
-    <h2>Contact</h2>
+</div>
 
-    <div class="contact-icons">
-        <a href="https://www.linkedin.com/in/vasarė-pratuzaitė-4676a1224/" target="_blank" class="icon-bubble">
-            <i class="fab fa-linkedin-in"></i>
-        </a>
-
-        <a href="https://github.com/vasarepratuzaite" target="_blank" class="icon-bubble">
-            <i class="fab fa-github"></i>
-        </a>
-    </div>
-</section>
-
-
-
+</body>
 </html>
