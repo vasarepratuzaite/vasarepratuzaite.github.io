@@ -98,10 +98,14 @@ h3 {
 /* ===========================
    MAIN CONTENT
 =========================== */
-
 .main {
   margin-left: 17rem;
-  padding: 70px;
+  padding: 40px 70px;
+}
+
+.hero-header {
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 /* ===========================
