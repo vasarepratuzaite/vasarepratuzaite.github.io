@@ -123,3 +123,95 @@
         height: 340px;
     }
 }
+
+/* ===== FINAL FIX: image blocks inside cards ===== */
+
+.community-card {
+    display: flex !important;
+    align-items: center !important;
+    gap: 30px !important;
+    overflow: hidden !important;
+}
+
+.community-card > img.community-image {
+    flex: 0 0 260px !important;
+    width: 260px !important;
+    height: 260px !important;
+    max-width: 260px !important;
+    min-width: 260px !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    border-radius: 14px !important;
+    border: 1px solid var(--border) !important;
+    background: var(--soft-gray) !important;
+    display: block !important;
+}
+
+.community-content {
+    flex: 1 !important;
+    min-width: 0 !important;
+}
+
+/* Certificates */
+.certificate-card {
+    display: flex !important;
+    align-items: center !important;
+    gap: 30px !important;
+    overflow: hidden !important;
+}
+
+.certificate-card > img.certificate-image,
+.certificate-card > img {
+    flex: 0 0 360px !important;
+    width: 360px !important;
+    max-width: 360px !important;
+    min-width: 360px !important;
+    height: 240px !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    border-radius: 14px !important;
+    border: 1px solid var(--border) !important;
+    background: var(--soft-gray) !important;
+    display: block !important;
+}
+
+.certificate-card > img.vertical-certificate {
+    height: 300px !important;
+    object-position: center top !important;
+}
+
+.certificate-card > img.horizontal-certificate {
+    height: 240px !important;
+    object-position: center center !important;
+}
+
+/* Links in one line */
+.link-row {
+    display: flex !important;
+    gap: 22px !important;
+    flex-wrap: wrap !important;
+    margin-top: 18px !important;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+    .community-card,
+    .certificate-card {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+
+    .community-card > img.community-image,
+    .certificate-card > img.certificate-image,
+    .certificate-card > img {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        flex: none !important;
+        height: 280px !important;
+    }
+
+    .certificate-card > img.vertical-certificate {
+        height: 340px !important;
+    }
+}
