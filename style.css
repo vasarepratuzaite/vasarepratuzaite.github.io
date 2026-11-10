@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
-    --blue: #2E6F76;
-    --blue-dark: #244f54;
-    --blue-light: #e8f4f5;
+    --blue: #605E42;
+    --blue-dark: #4A4833;
+    --blue-light: #EFEEE6;
     --white: #ffffff;
     --text: #111111;
     --muted: #666666;
-    --soft-gray: #f6f8f8;
-    --border: #e4e8e8;
-    --shadow: 0 18px 45px rgba(46, 111, 118, 0.08);
+    --soft-gray: #f7f7f4;
+    --border: #e6e5dc;
+    --shadow: 0 18px 45px rgba(96, 94, 66, 0.08);
 }
 
 * {
@@ -173,13 +173,13 @@ a {
 
 .card:hover {
     transform: translateY(-4px);
-    border-color: rgba(46, 111, 118, 0.45);
+    border-color: rgba(96, 94, 66, 0.45);
     box-shadow: var(--shadow);
 }
 
 .featured-card {
-    background: linear-gradient(135deg, #ffffff 0%, #f3fbfb 100%);
-    border-color: rgba(46, 111, 118, 0.28);
+    background: linear-gradient(135deg, #ffffff 0%, #f8f8f3 100%);
+    border-color: rgba(96, 94, 66, 0.28);
 }
 
 .card-number {
@@ -382,7 +382,7 @@ a {
     font-size: 26px;
     text-decoration: none;
     transition: 0.3s ease;
-    box-shadow: 0 10px 24px rgba(46, 111, 118, 0.18);
+    box-shadow: 0 10px 24px rgba(96, 94, 66, 0.18);
 }
 
 .icon-bubble:hover {
